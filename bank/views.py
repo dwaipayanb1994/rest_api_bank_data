@@ -8,7 +8,7 @@ from django.http import JsonResponse
 
 def BranchByIFSC(request, ifsc):
     data = Branch.objects.filter(ifsc=ifsc)
-    serialized_data = BankSerializer(data)
+    serialized_data = BankSerializer(data, many=True)
     return JsonResponse(serialized_data.data, safe=False)
 
 def BranchByBankAndCity(request, bank, city):
