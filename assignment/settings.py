@@ -144,4 +144,4 @@ STATICFILES_DIRS = (
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# DATABASES['default'].update(db_from_env)
+DATABASES['default'].update(db_from_env)
