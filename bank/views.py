@@ -7,7 +7,10 @@ from django.http import JsonResponse
 # Create your views here.
 
 def BranchByIFSC(request, ifsc):
-    data = Branch.objects.get(ifsc=ifsc)
+    try:
+        data = Branch.objects.get(ifsc=ifsc)
+    except Branch.DoesNotExist:
+        data = None
     serialized_data = BankSerializer(data)
     return JsonResponse(serialized_data.data, safe=False)
 
