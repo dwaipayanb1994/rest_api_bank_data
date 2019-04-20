@@ -2,8 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Bank(models.Model):
-    name = models.CharField(max_length=49)
     id = models.BigIntegerField(primary_key=True)
+    name = models.CharField(max_length=49)
+
 
     def __str__(self):
         return "ID - " + str(self.id) + " NAME - " + self.name
