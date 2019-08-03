@@ -31,6 +31,7 @@ public==2018.11.20
 py==1.8.0
 pycparser==2.19
 PyInstaller==3.4
+PyMySQL==0.9.3
 pytest==4.3.1
 python-dateutil==2.7.5
 python-decouple==3.1
