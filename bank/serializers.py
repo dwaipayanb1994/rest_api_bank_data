@@ -1,7 +1,7 @@
-from .models import Branch
-from rest_framework import serializers
-
-class BankSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Branch
-        fields = "__all__"
+# from .models import Branch
+# from rest_framework import serializers
+#
+# class BankSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Branch
+#         fields = "__all__"
